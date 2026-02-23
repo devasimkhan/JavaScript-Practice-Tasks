@@ -31,6 +31,20 @@
 }
 // 4. Prime Number Checker - Take a number and check whether it is prime or not using 
 // loop and condition
+let num2 = 11;
+let count2 = 0;
+
+for (let i = 2; i <= num2 / 2; i++) {
+  if (num2 % i === 0) {
+    count2++;
+  }
+}
+
+if (count2 === 0 && num2 > 1) {
+  console.log("Prime");
+} else {
+  console.log("Not Prime");
+}
   
 // 5. Factorial of a Number - Find factorial of a given number using loop. Example: 5 → 5 × 
 // 4 × 3 × 2 × 1. 
@@ -55,17 +69,17 @@ let reverse = 0 ;
  }
  console.log("Number is Reverse", reverse)
 // 7. Sum of Digits - Input: 456 Output: 4 + 5 + 6 = 15. 
-  // let number =prompt("give a number ")
-  //  let number1 = parseInt(number)
+  let number =prompt("give a number ") 
+   let number1 = parseInt(number)
 // let number = 1233444;
-//  let sum= 0;
-//   while(number1>0)
-//     {
-//     let count = number1%10;
-//       sum = sum+count;
-//       number1 = Math.floor(number1/10)
-//  }
-//  console.log("Sum is:",sum)
+ let sum= 0;
+  while(number1>0)
+    {
+    let count = number1%10;
+      sum = sum+count;
+      number1 = Math.floor(number1/10)
+ }
+ console.log("Sum is:",sum)
 
 // 8. Count Digits in a Number - Input: 98765 Output: 5. 
  let numbers =1234445;
@@ -89,12 +103,12 @@ let int = 120;
      }
 // 10. Multiplication Table - Print table of any number (up to 10).
 
-// let table =prompt("Give a Number ")
-//  let change =parseInt(table)
+let table =prompt("Give a Number ")
+ let change =parseInt(table)
 
-//  for(let i=1; i<=10; i++){
-//     console.log(`${i} x ${change} = ${i*change}`)
-//  }
+ for(let i=1; i<=10; i++){
+    console.log(`${i} x ${change} = ${i*change}`)
+ }
 
 // 11. Largest Number in Array - Find the largest number using loop and condition. 
 let arr=[0,22,3,42,2,3]
@@ -108,6 +122,18 @@ for(let i=0;i<arr.length;i++){
  
 
 // 12. Count Vowels in String - Loop through string and count vowels. 
+let str = "Hello World";
+let count1 = 0;
+
+for (let i = 0; i < str.length; i++) {
+  let ch = str[i].toLowerCase();
+
+  if (ch === "a" || ch === "e" || ch === "i" || ch === "o" || ch === "u") {
+    count1++;
+  }
+}
+
+console.log("Total vowels:", count1);
 // 13. Armstrong Number - Check if a number is Armstrong. Example: 153 → 1³ + 5³ + 3³ = 
 // 153. 
    let number2 = 153;
