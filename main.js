@@ -31,7 +31,7 @@
 }
 // 4. Prime Number Checker - Take a number and check whether it is prime or not using 
 // loop and condition
-
+  
 // 5. Factorial of a Number - Find factorial of a given number using loop. Example: 5 → 5 × 
 // 4 × 3 × 2 × 1. 
 
@@ -48,9 +48,9 @@
 
  let number3 = 1234;
 let reverse = 0 ;
- while(number3 >0){
+    while(number3 > 0){
    let Digits = number3%10;
-    reverse = reverse * 10 + Digits
+    reverse = reverse * 10 + Digits      
      number3 =  Math.floor(number3/10)
  }
  console.log("Number is Reverse", reverse)
